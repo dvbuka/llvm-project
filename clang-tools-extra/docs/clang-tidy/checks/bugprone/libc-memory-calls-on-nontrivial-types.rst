@@ -1,9 +1,9 @@
 .. title:: clang-tidy - bugprone-libc-memory-calls-on-nontrivial-types
 
 bugprone-libc-memory-calls-on-nontrivial-types
-==============
+==============================================
 
-  Flags use of the `C` standard library functions ``memset``, ``memcpy`` and
+  Flags use of the C standard library functions ``memset``, ``memcpy`` and
   ``memcmp`` and similar derivatives on non-trivial types.
 
 Options
@@ -23,8 +23,8 @@ Options
    Specify names in a semicolon delimited list.
    Default is an empty string.
    The check will detect the following functions:
-   `std::memcpy`, `memcpy`, `std::memmove`, `memmove`, `std::strcpy`,
-   `strcpy`, `memccpy`, `stpncpy`, `strncpy`.
+   `std::memcpy`, ``memcpy`, `std::memmove`, ``memmove``, ``std::strcpy``,
+   ``strcpy``, ``memccpy``, ``stpncpy``, ``strncpy``.
 
 .. option:: MemCmpNames
 
@@ -32,7 +32,7 @@ Options
    Specify names in a semicolon delimited list.
    Default is an empty string.
    The check will detect the following functions:
-   `std::memcmp`, `memcmp`, `std::strcmp`, `strcmp`, `strncmp`.
+   ``std::memcmp``, ``memcmp``, ``std::strcmp``, ``strcmp``, ``strncmp``.
 
 This check corresponds to the CERT C++ Coding Standard rule
 `OOP57-CPP. Prefer special member functions and overloaded operators to C

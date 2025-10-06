@@ -13,7 +13,7 @@
 
 namespace clang::tidy::bugprone {
 
-/// Flags use of the `C` standard library functions 'memset', 'memcpy' and
+/// Flags use of the C standard library functions 'memset', 'memcpy' and
 /// 'memcmp' and similar derivatives on non-trivial types.
 ///
 /// For the user-facing documentation see:
