@@ -15,7 +15,7 @@ Options
    Specify names in a semicolon delimited list.
    Default is an empty string.
    The check will detect the following functions:
-   `memset`, `std::memset`.
+   ``memset``, ``std::memset``.
 
 .. option:: MemCpyNames
 
