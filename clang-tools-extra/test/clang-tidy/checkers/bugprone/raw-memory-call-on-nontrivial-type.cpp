@@ -1,8 +1,8 @@
-// RUN: %check_clang_tidy %s libc-memory-calls-on-nontrivial-types %t -- \
+// RUN: %check_clang_tidy %s raw-memory-call-on-nontrivial-type %t -- \
 // RUN: -config='{CheckOptions: \
-// RUN:  {libc-memory-calls-on-nontrivial-types.MemSetNames: mymemset, \
-// RUN:  libc-memory-calls-on-nontrivial-types.MemCpyNames: mymemcpy, \
-// RUN:  libc-memory-calls-on-nontrivial-types.MemCmpNames: mymemcmp}}' \
+// RUN:  {raw-memory-call-on-nontrivial-type.MemSetNames: mymemset, \
+// RUN:  raw-memory-call-on-nontrivial-type.MemCpyNames: mymemcpy, \
+// RUN:  raw-memory-call-on-nontrivial-type.MemCmpNames: mymemcmp}}' \
 // RUN: --
 
 void mymemset(void *, unsigned char, decltype(sizeof(int)));

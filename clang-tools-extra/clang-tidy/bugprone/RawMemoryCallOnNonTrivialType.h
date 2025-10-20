@@ -17,7 +17,7 @@ namespace clang::tidy::bugprone {
 /// 'memcmp' and similar derivatives on non-trivial types.
 ///
 /// For the user-facing documentation see:
-/// https://clang.llvm.org/extra/clang-tidy/checks/bugprone/libc-memory-calls-on-nontrivial-types.html
+/// https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-nontrivial-type.html
 class LibcMemoryCallsOnNonTrivialTypesCheck : public ClangTidyCheck {
 public:
   LibcMemoryCallsOnNonTrivialTypesCheck(StringRef Name,

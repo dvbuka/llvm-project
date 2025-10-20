@@ -1,12 +1,12 @@
 .. title:: clang-tidy - cert-oop57-cpp
 .. meta::
-   :http-equiv=refresh: 5;URL=../bugprone/libc-memory-calls-on-nontrivial-types.html
+   :http-equiv=refresh: 5;URL=../bugprone/raw-memory-call-on-nontrivial-type.html
 
 cert-oop57-cpp
 ==============
 
 The `cert-oop57-cpp` check is an alias, please see
-`bugprone-libc-memory-calls-on-nontrivial-types <../bugprone/libc-memory-calls-on-nontrivial-types.html>`_
+`bugprone-raw-memory-call-on-nontrivial-type <../bugprone/raw-memory-call-on-nontrivial-type.html>`_
 for more information.
 
 This check corresponds to the CERT C++ Coding Standard rule

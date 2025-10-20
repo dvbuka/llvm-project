@@ -125,7 +125,7 @@ Clang-Tidy Checks
    :doc:`bugprone-non-zero-enum-to-bool-conversion <bugprone/non-zero-enum-to-bool-conversion>`,
    :doc:`bugprone-nondeterministic-pointer-iteration-order <bugprone/nondeterministic-pointer-iteration-order>`,
    :doc:`bugprone-not-null-terminated-result <bugprone/not-null-terminated-result>`, "Yes"
-   :doc:`bugprone-libc-memory-calls-on-nontrivial-types <bugprone/libc-memory-calls-on-nontrivial-types>`,
+   :doc:`bugprone-raw-memory-call-on-nontrivial-type <bugprone/raw-memory-call-on-nontrivial-type>`,
    :doc:`bugprone-optional-value-conversion <bugprone/optional-value-conversion>`, "Yes"
    :doc:`bugprone-parent-virtual-call <bugprone/parent-virtual-call>`, "Yes"
    :doc:`bugprone-pointer-arithmetic-on-polymorphic-object <bugprone/pointer-arithmetic-on-polymorphic-object>`,
@@ -457,7 +457,7 @@ Check aliases
    :doc:`cert-msc54-cpp <cert/msc54-cpp>`, :doc:`bugprone-signal-handler <bugprone/signal-handler>`,
    :doc:`cert-oop11-cpp <cert/oop11-cpp>`, :doc:`performance-move-constructor-init <performance/move-constructor-init>`,
    :doc:`cert-oop54-cpp <cert/oop54-cpp>`, :doc:`bugprone-unhandled-self-assignment <bugprone/unhandled-self-assignment>`,
-   :doc:`cert-oop57-cpp <cert/oop57-cpp>`, :doc:`bugprone-libc-memory-calls-on-nontrivial-types <bugprone/libc-memory-calls-on-nontrivial-types>`,
+   :doc:`cert-oop57-cpp <cert/oop57-cpp>`, :doc:`bugprone-raw-memory-call-on-nontrivial-type <bugprone/raw-memory-call-on-nontrivial-type>`,
    :doc:`cert-pos44-c <cert/pos44-c>`, :doc:`bugprone-bad-signal-to-kill-thread <bugprone/bad-signal-to-kill-thread>`,
    :doc:`cert-pos47-c <cert/pos47-c>`, :doc:`concurrency-thread-canceltype-asynchronous <concurrency/thread-canceltype-asynchronous>`,
    :doc:`cert-sig30-c <cert/sig30-c>`, :doc:`bugprone-signal-handler <bugprone/signal-handler>`,

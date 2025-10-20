@@ -1,6 +1,6 @@
-.. title:: clang-tidy - bugprone-libc-memory-calls-on-nontrivial-types
+.. title:: clang-tidy - bugprone-raw-memory-call-on-nontrivial-type
 
-bugprone-libc-memory-calls-on-nontrivial-types
+bugprone-raw-memory-call-on-nontrivial-type
 ==============================================
 
   Flags use of the C standard library functions ``memset``, ``memcpy`` and
