@@ -1,7 +1,7 @@
 .. title:: clang-tidy - bugprone-raw-memory-call-on-nontrivial-type
 
 bugprone-raw-memory-call-on-nontrivial-type
-==============================================
+===========================================
 
   Flags use of the C standard library functions ``memset``, ``memcpy`` and
   ``memcmp`` and similar derivatives on non-trivial types.
