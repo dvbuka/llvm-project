@@ -20,8 +20,7 @@ namespace clang::tidy::bugprone {
 /// https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-non-trivial-type.html
 class RawMemoryCallOnNonTrivialTypeCheck : public ClangTidyCheck {
 public:
-  RawMemoryCallOnNonTrivialTypeCheck(StringRef Name,
-                                      ClangTidyContext *Context);
+  RawMemoryCallOnNonTrivialTypeCheck(StringRef Name, ClangTidyContext *Context);
   bool isLanguageVersionSupported(const LangOptions &LangOpts) const override {
     return LangOpts.CPlusPlus && !LangOpts.ObjC;
   }

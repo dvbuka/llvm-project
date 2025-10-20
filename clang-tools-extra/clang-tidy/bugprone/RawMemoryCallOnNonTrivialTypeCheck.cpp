@@ -62,8 +62,7 @@ void RawMemoryCallOnNonTrivialTypeCheck::storeOptions(
   Options.store(Opts, "MemCmpNames", MemCmpNames);
 }
 
-void RawMemoryCallOnNonTrivialTypeCheck::registerMatchers(
-    MatchFinder *Finder) {
+void RawMemoryCallOnNonTrivialTypeCheck::registerMatchers(MatchFinder *Finder) {
   using namespace ast_matchers::internal;
   auto IsStructPointer = [](Matcher<CXXRecordDecl> Constraint = anything(),
                             bool Bind = false) {
