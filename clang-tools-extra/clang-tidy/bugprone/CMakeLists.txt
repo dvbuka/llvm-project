@@ -43,7 +43,7 @@ add_clang_library(clangTidyBugproneModule STATIC
   InfiniteLoopCheck.cpp
   IntegerDivisionCheck.cpp
   LambdaFunctionNameCheck.cpp
-  LibcMemoryCallsOnNonTrivialTypesCheck.cpp
+  RawMemoryCallOnNontrivialTypeCheck.cpp
   MacroParenthesesCheck.cpp
   MacroRepeatedSideEffectsCheck.cpp
   MisleadingSetterOfReferenceCheck.cpp

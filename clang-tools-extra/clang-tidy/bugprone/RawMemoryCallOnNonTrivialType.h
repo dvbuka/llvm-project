@@ -18,9 +18,9 @@ namespace clang::tidy::bugprone {
 ///
 /// For the user-facing documentation see:
 /// https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-nontrivial-type.html
-class LibcMemoryCallsOnNonTrivialTypesCheck : public ClangTidyCheck {
+class RawMemoryCallOnNontrivialTypeCheck : public ClangTidyCheck {
 public:
-  LibcMemoryCallsOnNonTrivialTypesCheck(StringRef Name,
+  RawMemoryCallOnNontrivialTypeCheck(StringRef Name,
                                       ClangTidyContext *Context);
   bool isLanguageVersionSupported(const LangOptions &LangOpts) const override {
     return LangOpts.CPlusPlus && !LangOpts.ObjC;

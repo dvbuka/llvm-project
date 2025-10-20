@@ -11,7 +11,7 @@
 #include "../ClangTidyModuleRegistry.h"
 #include "../bugprone/BadSignalToKillThreadCheck.h"
 #include "../bugprone/CommandProcessorCheck.h"
-#include "../bugprone/LibcMemoryCallsOnNonTrivialTypesCheck.h"
+#include "../bugprone/RawMemoryCallOnNontrivialTypeCheck.h"
 #include "../bugprone/PointerArithmeticOnPolymorphicObjectCheck.h"
 #include "../bugprone/ReservedIdentifierCheck.h"
 #include "../bugprone/SignalHandlerCheck.h"
@@ -278,7 +278,7 @@ public:
         "cert-oop11-cpp");
     CheckFactories.registerCheck<bugprone::UnhandledSelfAssignmentCheck>(
         "cert-oop54-cpp");
-    CheckFactories.registerCheck<bugprone::LibcMemoryCallsOnNonTrivialTypesCheck>(
+    CheckFactories.registerCheck<bugprone::RawMemoryCallOnNontrivialTypeCheck>(
         "cert-oop57-cpp");
     CheckFactories.registerCheck<MutatingCopyCheck>("cert-oop58-cpp");
 
