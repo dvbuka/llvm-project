@@ -1,8 +1,8 @@
-// RUN: %check_clang_tidy %s raw-memory-call-on-nontrivial-type %t -- \
+// RUN: %check_clang_tidy %s raw-memory-call-on-non-trivial-type %t -- \
 // RUN: -config='{CheckOptions: \
-// RUN:  {raw-memory-call-on-nontrivial-type.MemSetNames: mymemset, \
-// RUN:  raw-memory-call-on-nontrivial-type.MemCpyNames: mymemcpy, \
-// RUN:  raw-memory-call-on-nontrivial-type.MemCmpNames: mymemcmp}}' \
+// RUN:  {raw-memory-call-on-non-trivial-type.MemSetNames: mymemset, \
+// RUN:  raw-memory-call-on-non-trivial-type.MemCpyNames: mymemcpy, \
+// RUN:  raw-memory-call-on-non-trivial-type.MemCmpNames: mymemcmp}}' \
 // RUN: --
 
 void mymemset(void *, unsigned char, decltype(sizeof(int)));

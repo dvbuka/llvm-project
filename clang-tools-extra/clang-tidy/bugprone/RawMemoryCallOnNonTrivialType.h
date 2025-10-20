@@ -17,10 +17,10 @@ namespace clang::tidy::bugprone {
 /// 'memcmp' and similar derivatives on non-trivial types.
 ///
 /// For the user-facing documentation see:
-/// https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-nontrivial-type.html
-class RawMemoryCallOnNontrivialTypeCheck : public ClangTidyCheck {
+/// https://clang.llvm.org/extra/clang-tidy/checks/bugprone/raw-memory-call-on-non-trivial-type.html
+class RawMemoryCallOnNonTrivialTypeCheck : public ClangTidyCheck {
 public:
-  RawMemoryCallOnNontrivialTypeCheck(StringRef Name,
+  RawMemoryCallOnNonTrivialTypeCheck(StringRef Name,
                                       ClangTidyContext *Context);
   bool isLanguageVersionSupported(const LangOptions &LangOpts) const override {
     return LangOpts.CPlusPlus && !LangOpts.ObjC;

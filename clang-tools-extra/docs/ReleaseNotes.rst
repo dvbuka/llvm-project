@@ -242,8 +242,8 @@ New check aliases
   keeping initial check as an alias to the new one.
 
 - Renamed :doc:`cert-oop57-cpp <clang-tidy/checks/cert/oop57-cpp>` to
-  :doc:`bugprone-raw-memory-call-on-nontrivial-type
-  <clang-tidy/checks/bugprone/raw-memory-call-on-nontrivial-type>`
+  :doc:`bugprone-raw-memory-call-on-non-trivial-type
+  <clang-tidy/checks/bugprone/raw-memory-call-on-non-trivial-type>`
   keeping initial check as an alias to the new one.
 
 Changes in existing checks

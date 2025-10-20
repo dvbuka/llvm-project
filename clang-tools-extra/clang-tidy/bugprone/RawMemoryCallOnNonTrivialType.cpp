@@ -6,7 +6,7 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include "RawMemoryCallOnNontrivialTypeCheck.h"
+#include "RawMemoryCallOnNonTrivialTypeCheck.h"
 #include "../utils/OptionsUtils.h"
 #include "clang/AST/Decl.h"
 #include "clang/ASTMatchers/ASTMatchFinder.h"
@@ -48,21 +48,21 @@ static constexpr llvm::StringRef ComparisonOperators[] = {
     "operator==", "operator!=", "operator<",
     "operator>",  "operator<=", "operator>="};
 
-RawMemoryCallOnNontrivialTypeCheck::RawMemoryCallOnNontrivialTypeCheck(
+RawMemoryCallOnNonTrivialTypeCheck::RawMemoryCallOnNonTrivialTypeCheck(
     StringRef Name, ClangTidyContext *Context)
     : ClangTidyCheck(Name, Context),
       MemSetNames(Options.get("MemSetNames", "")),
       MemCpyNames(Options.get("MemCpyNames", "")),
       MemCmpNames(Options.get("MemCmpNames", "")) {}
 
-void RawMemoryCallOnNontrivialTypeCheck::storeOptions(
+void RawMemoryCallOnNonTrivialTypeCheck::storeOptions(
     ClangTidyOptions::OptionMap &Opts) {
   Options.store(Opts, "MemSetNames", MemSetNames);
   Options.store(Opts, "MemCpyNames", MemCpyNames);
   Options.store(Opts, "MemCmpNames", MemCmpNames);
 }
 
-void RawMemoryCallOnNontrivialTypeCheck::registerMatchers(
+void RawMemoryCallOnNonTrivialTypeCheck::registerMatchers(
     MatchFinder *Finder) {
   using namespace ast_matchers::internal;
   auto IsStructPointer = [](Matcher<CXXRecordDecl> Constraint = anything(),
@@ -103,7 +103,7 @@ void RawMemoryCallOnNontrivialTypeCheck::registerMatchers(
       this);
 }
 
-void RawMemoryCallOnNontrivialTypeCheck::check(
+void RawMemoryCallOnNonTrivialTypeCheck::check(
     const MatchFinder::MatchResult &Result) {
   if (const auto *Caller = Result.Nodes.getNodeAs<CallExpr>("lazyConstruct")) {
     diag(Caller->getBeginLoc(), "calling %0 on a non-trivially default "
