@@ -199,8 +199,7 @@ public:
         "bugprone-multiple-new-in-one-expression");
     CheckFactories.registerCheck<MultipleStatementMacroCheck>(
         "bugprone-multiple-statement-macro");
-    CheckFactories.registerCheck<MutatingCopyCheck>(
-        "bugprone-mutating-copy");
+    CheckFactories.registerCheck<MutatingCopyCheck>("bugprone-mutating-copy");
     CheckFactories.registerCheck<NondeterministicPointerIterationOrderCheck>(
         "bugprone-nondeterministic-pointer-iteration-order");
     CheckFactories.registerCheck<OptionalValueConversionCheck>(
