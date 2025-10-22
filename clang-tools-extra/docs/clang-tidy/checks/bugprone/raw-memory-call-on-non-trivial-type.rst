@@ -21,9 +21,8 @@ Options
 
 .. option:: MemCpyNames
 
-   Specify extra functions to flag that act similarly to ``memcpy``.
-   Specify names in a semicolon delimited list.
-   Default is an empty string.
+   Specify extra functions to flag that act similarly to ``memcpy``. Specify 
+   names in a semicolon-delimited list. Default is an empty string.
 
 .. option:: MemCmpNames
 
