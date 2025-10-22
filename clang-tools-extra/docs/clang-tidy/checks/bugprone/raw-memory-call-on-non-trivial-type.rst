@@ -26,9 +26,8 @@ Options
 
 .. option:: MemCmpNames
 
-   Specify extra functions to flag that act similarly to ``memcmp``.
-   Specify names in a semicolon delimited list.
-   Default is an empty string.
+   Specify extra functions to flag that act similarly to ``memcmp``. Specify 
+   names in a semicolon-delimited list. Default is an empty string.
 
 This check corresponds to the CERT C++ Coding Standard rule
 `OOP57-CPP. Prefer special member functions and overloaded operators to C
